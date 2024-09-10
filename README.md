@@ -17,11 +17,9 @@ Este projeto é uma aplicação simples de gerenciamento de usuários, desenvolv
 
 ## Estrutura do Projeto
 
-meu-projeto/
-├── css/
-│   └── styles.css         # Arquivo de estilos
-├── js/
-│   └── scripts.js         # Script principal com a lógica de CRUD
+meu-projeto
+> css/styles.css        # Arquivo de estilos
+js/scripts.js         # Script principal com a lógica de CRUD
 ├── index.html             # Arquivo principal da interface
 └── README.md              # Instruções de uso
 
