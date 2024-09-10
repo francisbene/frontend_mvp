@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gerenciamento de Usuários</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Gerenciamento de Usuários</h2>
+        
+        <!-- Formulário para Adicionar Usuário -->
+        <div class="form-container">
+            <h3>Adicionar Novo Usuário</h3>
+            <form id="userForm">
+                <input type="text" id="name" placeholder="Nome" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <button type="submit">Adicionar Usuário</button>
+            </form>
+        </div>
+
+        <!-- Formulário para Buscar Usuário -->
+        <div class="search-container">
+            <h3>Buscar Usuário por Nome</h3>
+            <input type="text" id="searchName" placeholder="Digite o nome">
+            <button onclick="searchUserByName()">Buscar</button>
+        </div>
+
+        <!-- Tabela de Usuários -->
+        <div class="user-list">
+            <h3>Lista de Usuários</h3>
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th>Nome</th>
+                        <th>Email</th>
+                        <th>Ações</th>
+                    </tr>
+                </thead>
+                <tbody id="users">
+                    <!-- Exemplo de Estrutura de Usuário -->
+                    <tr>
+                        <td>Maria Fernanda</td>
+                        <td>maria.f@nongov.org</td>
+                        <td>
+                            <button class="edit-button">Editar</button>
+                            <button class="delete-button">Deletar</button>
+                        </td>
+                    </tr>
+                    <!-- Mais usuários podem ser adicionados dinamicamente aqui -->
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,149 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    width: 80%;
+    margin: 20px auto;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 8px; /* Borda arredondada */
+}
+
+h1, h2, h3 {
+    color: #333;
+    margin-bottom: 10px;
+}
+
+.form-container, .search-container, .user-list {
+    margin-bottom: 30px; /* Espaçamento entre seções */
+    padding: 15px;
+    background-color: #f8f9fa;
+    border-radius: 8px; /* Borda arredondada */
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.05);
+}
+
+input[type="text"], input[type="email"] {
+    width: calc(50% - 22px); /* Para melhor responsividade */
+    padding: 10px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+input[type="text"]:focus, input[type="email"]:focus {
+    border-color: #007bff;
+}
+
+button {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+    font-weight: bold;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+button[type="submit"] {
+    background-color: #28a745;
+    color: #fff;
+}
+
+button[type="submit"]:hover {
+    background-color: #218838;
+    transform: translateY(-2px);
+}
+
+/* Estilos de Botões de Ação */
+.user-list button {
+    margin-right: 5px;
+}
+
+button.edit-button {
+    background-color: #007bff;
+    color: #fff;
+}
+
+button.edit-button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+button.delete-button {
+    background-color: #dc3545;
+    color: #fff;
+}
+
+button.delete-button:hover {
+    background-color: #c82333;
+    transform: translateY(-2px);
+}
+
+/* Estilos para a Tabela de Usuários */
+.user-list table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.user-list th, .user-list td {
+    padding: 12px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.user-list th {
+    background-color: #f8f8f8;
+    color: #333;
+    font-weight: bold;
+}
+
+.user-list tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Estilos para o Formulário de Busca */
+.search-container input[type="text"] {
+    width: calc(60% - 22px); /* Melhor para responsividade */
+    padding: 10px;
+    margin-right: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    transition: border-color 0.3s ease;
+}
+
+.search-container input[type="text"]:focus {
+    border-color: #007bff;
+}
+
+.search-container button {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 4px;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.search-container button:hover {
+    background-color: #0056b3;
+    transform: translateY(-2px);
+}
+
+/* Responsividade */
+@media (max-width: 768px) {
+    input[type="text"], input[type="email"], .search-container input[type="text"] {
+        width: 100%;
+        margin-bottom: 10px;
+    }
+    .search-container button {
+        width: 100%;
+    }
+}
